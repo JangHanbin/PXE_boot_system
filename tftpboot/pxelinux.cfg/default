@@ -1,0 +1,13 @@
+
+
+default menu.c32
+prompt 0
+menu title Boot Menu
+	label localboot
+	menu label Boot Local Disk
+	localboot 0
+
+	label 1604manual
+	menu label Manual Install Ubuntu 16.04 Server
+	kernel 1604/linux
+	append initrd=1604/initrd.gz vga=788 
